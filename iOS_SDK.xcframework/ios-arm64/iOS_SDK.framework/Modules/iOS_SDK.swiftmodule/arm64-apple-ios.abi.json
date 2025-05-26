@@ -1,0 +1,3944 @@
+{
+  "ABIRoot": {
+    "kind": "Root",
+    "name": "iOS_SDK",
+    "printedName": "iOS_SDK",
+    "children": [
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "iOS_SDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "iOS_SDK"
+      },
+      {
+        "kind": "Import",
+        "name": "Vision",
+        "printedName": "Vision",
+        "declKind": "Import",
+        "moduleName": "iOS_SDK"
+      },
+      {
+        "kind": "Import",
+        "name": "TensorFlowLite",
+        "printedName": "TensorFlowLite",
+        "declKind": "Import",
+        "moduleName": "iOS_SDK"
+      },
+      {
+        "kind": "Import",
+        "name": "CoreGraphics",
+        "printedName": "CoreGraphics",
+        "declKind": "Import",
+        "moduleName": "iOS_SDK"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "TextProcessor",
+        "printedName": "TextProcessor",
+        "children": [
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "TextProcessor",
+                "printedName": "iOS_SDK.TextProcessor",
+                "usr": "s:7iOS_SDK13TextProcessorC"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:7iOS_SDK13TextProcessorCACycfc",
+            "mangledName": "$s7iOS_SDK13TextProcessorCACycfc",
+            "moduleName": "iOS_SDK",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Var",
+            "name": "recognizedString",
+            "printedName": "recognizedString",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Array",
+                "printedName": "[Swift.String]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sa"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:7iOS_SDK13TextProcessorC16recognizedStringSaySSGvp",
+            "mangledName": "$s7iOS_SDK13TextProcessorC16recognizedStringSaySSGvp",
+            "moduleName": "iOS_SDK",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Array",
+                    "printedName": "[Swift.String]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sa"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:7iOS_SDK13TextProcessorC16recognizedStringSaySSGvg",
+                "mangledName": "$s7iOS_SDK13TextProcessorC16recognizedStringSaySSGvg",
+                "moduleName": "iOS_SDK",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Array",
+                    "printedName": "[Swift.String]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sa"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:7iOS_SDK13TextProcessorC16recognizedStringSaySSGvs",
+                "mangledName": "$s7iOS_SDK13TextProcessorC16recognizedStringSaySSGvs",
+                "moduleName": "iOS_SDK",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:7iOS_SDK13TextProcessorC16recognizedStringSaySSGvM",
+                "mangledName": "$s7iOS_SDK13TextProcessorC16recognizedStringSaySSGvM",
+                "moduleName": "iOS_SDK",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "recognizedString1",
+            "printedName": "recognizedString1",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Array",
+                "printedName": "[Swift.String]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sa"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:7iOS_SDK13TextProcessorC17recognizedString1SaySSGvp",
+            "mangledName": "$s7iOS_SDK13TextProcessorC17recognizedString1SaySSGvp",
+            "moduleName": "iOS_SDK",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Array",
+                    "printedName": "[Swift.String]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sa"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:7iOS_SDK13TextProcessorC17recognizedString1SaySSGvg",
+                "mangledName": "$s7iOS_SDK13TextProcessorC17recognizedString1SaySSGvg",
+                "moduleName": "iOS_SDK",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Array",
+                    "printedName": "[Swift.String]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sa"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:7iOS_SDK13TextProcessorC17recognizedString1SaySSGvs",
+                "mangledName": "$s7iOS_SDK13TextProcessorC17recognizedString1SaySSGvs",
+                "moduleName": "iOS_SDK",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:7iOS_SDK13TextProcessorC17recognizedString1SaySSGvM",
+                "mangledName": "$s7iOS_SDK13TextProcessorC17recognizedString1SaySSGvM",
+                "moduleName": "iOS_SDK",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "sig",
+            "printedName": "sig",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Array",
+                "printedName": "[Swift.Bool]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "usr": "s:Sa"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:7iOS_SDK13TextProcessorC3sigSaySbGvp",
+            "mangledName": "$s7iOS_SDK13TextProcessorC3sigSaySbGvp",
+            "moduleName": "iOS_SDK",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Array",
+                    "printedName": "[Swift.Bool]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Bool",
+                        "printedName": "Swift.Bool",
+                        "usr": "s:Sb"
+                      }
+                    ],
+                    "usr": "s:Sa"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:7iOS_SDK13TextProcessorC3sigSaySbGvg",
+                "mangledName": "$s7iOS_SDK13TextProcessorC3sigSaySbGvg",
+                "moduleName": "iOS_SDK",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Array",
+                    "printedName": "[Swift.Bool]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Bool",
+                        "printedName": "Swift.Bool",
+                        "usr": "s:Sb"
+                      }
+                    ],
+                    "usr": "s:Sa"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:7iOS_SDK13TextProcessorC3sigSaySbGvs",
+                "mangledName": "$s7iOS_SDK13TextProcessorC3sigSaySbGvs",
+                "moduleName": "iOS_SDK",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:7iOS_SDK13TextProcessorC3sigSaySbGvM",
+                "mangledName": "$s7iOS_SDK13TextProcessorC3sigSaySbGvM",
+                "moduleName": "iOS_SDK",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "sig_score",
+            "printedName": "sig_score",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:7iOS_SDK13TextProcessorC9sig_scoreSivp",
+            "mangledName": "$s7iOS_SDK13TextProcessorC9sig_scoreSivp",
+            "moduleName": "iOS_SDK",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:7iOS_SDK13TextProcessorC9sig_scoreSivg",
+                "mangledName": "$s7iOS_SDK13TextProcessorC9sig_scoreSivg",
+                "moduleName": "iOS_SDK",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:7iOS_SDK13TextProcessorC9sig_scoreSivs",
+                "mangledName": "$s7iOS_SDK13TextProcessorC9sig_scoreSivs",
+                "moduleName": "iOS_SDK",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:7iOS_SDK13TextProcessorC9sig_scoreSivM",
+                "mangledName": "$s7iOS_SDK13TextProcessorC9sig_scoreSivM",
+                "moduleName": "iOS_SDK",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "signatureScores",
+            "printedName": "signatureScores",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Array",
+                "printedName": "[Swift.Int]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "usr": "s:Sa"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:7iOS_SDK13TextProcessorC15signatureScoresSaySiGvp",
+            "mangledName": "$s7iOS_SDK13TextProcessorC15signatureScoresSaySiGvp",
+            "moduleName": "iOS_SDK",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Array",
+                    "printedName": "[Swift.Int]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Int",
+                        "printedName": "Swift.Int",
+                        "usr": "s:Si"
+                      }
+                    ],
+                    "usr": "s:Sa"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:7iOS_SDK13TextProcessorC15signatureScoresSaySiGvg",
+                "mangledName": "$s7iOS_SDK13TextProcessorC15signatureScoresSaySiGvg",
+                "moduleName": "iOS_SDK",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Array",
+                    "printedName": "[Swift.Int]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Int",
+                        "printedName": "Swift.Int",
+                        "usr": "s:Si"
+                      }
+                    ],
+                    "usr": "s:Sa"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:7iOS_SDK13TextProcessorC15signatureScoresSaySiGvs",
+                "mangledName": "$s7iOS_SDK13TextProcessorC15signatureScoresSaySiGvs",
+                "moduleName": "iOS_SDK",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:7iOS_SDK13TextProcessorC15signatureScoresSaySiGvM",
+                "mangledName": "$s7iOS_SDK13TextProcessorC15signatureScoresSaySiGvM",
+                "moduleName": "iOS_SDK",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "micr_score",
+            "printedName": "micr_score",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Float",
+                "printedName": "Swift.Float",
+                "usr": "s:Sf"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:7iOS_SDK13TextProcessorC10micr_scoreSfvp",
+            "mangledName": "$s7iOS_SDK13TextProcessorC10micr_scoreSfvp",
+            "moduleName": "iOS_SDK",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Float",
+                    "printedName": "Swift.Float",
+                    "usr": "s:Sf"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:7iOS_SDK13TextProcessorC10micr_scoreSfvg",
+                "mangledName": "$s7iOS_SDK13TextProcessorC10micr_scoreSfvg",
+                "moduleName": "iOS_SDK",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Float",
+                    "printedName": "Swift.Float",
+                    "usr": "s:Sf"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:7iOS_SDK13TextProcessorC10micr_scoreSfvs",
+                "mangledName": "$s7iOS_SDK13TextProcessorC10micr_scoreSfvs",
+                "moduleName": "iOS_SDK",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:7iOS_SDK13TextProcessorC10micr_scoreSfvM",
+                "mangledName": "$s7iOS_SDK13TextProcessorC10micr_scoreSfvM",
+                "moduleName": "iOS_SDK",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "cvn_score",
+            "printedName": "cvn_score",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Float",
+                "printedName": "Swift.Float",
+                "usr": "s:Sf"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:7iOS_SDK13TextProcessorC9cvn_scoreSfvp",
+            "mangledName": "$s7iOS_SDK13TextProcessorC9cvn_scoreSfvp",
+            "moduleName": "iOS_SDK",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Float",
+                    "printedName": "Swift.Float",
+                    "usr": "s:Sf"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:7iOS_SDK13TextProcessorC9cvn_scoreSfvg",
+                "mangledName": "$s7iOS_SDK13TextProcessorC9cvn_scoreSfvg",
+                "moduleName": "iOS_SDK",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Float",
+                    "printedName": "Swift.Float",
+                    "usr": "s:Sf"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:7iOS_SDK13TextProcessorC9cvn_scoreSfvs",
+                "mangledName": "$s7iOS_SDK13TextProcessorC9cvn_scoreSfvs",
+                "moduleName": "iOS_SDK",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:7iOS_SDK13TextProcessorC9cvn_scoreSfvM",
+                "mangledName": "$s7iOS_SDK13TextProcessorC9cvn_scoreSfvM",
+                "moduleName": "iOS_SDK",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "counter",
+            "printedName": "counter",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:7iOS_SDK13TextProcessorC7counterSivp",
+            "mangledName": "$s7iOS_SDK13TextProcessorC7counterSivp",
+            "moduleName": "iOS_SDK",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:7iOS_SDK13TextProcessorC7counterSivg",
+                "mangledName": "$s7iOS_SDK13TextProcessorC7counterSivg",
+                "moduleName": "iOS_SDK",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:7iOS_SDK13TextProcessorC7counterSivs",
+                "mangledName": "$s7iOS_SDK13TextProcessorC7counterSivs",
+                "moduleName": "iOS_SDK",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:7iOS_SDK13TextProcessorC7counterSivM",
+                "mangledName": "$s7iOS_SDK13TextProcessorC7counterSivM",
+                "moduleName": "iOS_SDK",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "cvn_counter",
+            "printedName": "cvn_counter",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:7iOS_SDK13TextProcessorC11cvn_counterSivp",
+            "mangledName": "$s7iOS_SDK13TextProcessorC11cvn_counterSivp",
+            "moduleName": "iOS_SDK",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:7iOS_SDK13TextProcessorC11cvn_counterSivg",
+                "mangledName": "$s7iOS_SDK13TextProcessorC11cvn_counterSivg",
+                "moduleName": "iOS_SDK",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:7iOS_SDK13TextProcessorC11cvn_counterSivs",
+                "mangledName": "$s7iOS_SDK13TextProcessorC11cvn_counterSivs",
+                "moduleName": "iOS_SDK",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:7iOS_SDK13TextProcessorC11cvn_counterSivM",
+                "mangledName": "$s7iOS_SDK13TextProcessorC11cvn_counterSivM",
+                "moduleName": "iOS_SDK",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Function",
+            "name": "processImage",
+            "printedName": "processImage(image:onProcessingFinish:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "CIImage",
+                "printedName": "CoreImage.CIImage",
+                "usr": "c:objc(cs)CIImage"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "() -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:7iOS_SDK13TextProcessorC12processImage5image18onProcessingFinishySo7CIImageC_yyctF",
+            "mangledName": "$s7iOS_SDK13TextProcessorC12processImage5image18onProcessingFinishySo7CIImageC_yyctF",
+            "moduleName": "iOS_SDK",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Var",
+            "name": "codeline",
+            "printedName": "codeline",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "CodelineOutput",
+                "printedName": "iOS_SDK.CodelineOutput",
+                "usr": "s:7iOS_SDK14CodelineOutputC"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:7iOS_SDK13TextProcessorC8codelineAA14CodelineOutputCvp",
+            "mangledName": "$s7iOS_SDK13TextProcessorC8codelineAA14CodelineOutputCvp",
+            "moduleName": "iOS_SDK",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "CodelineOutput",
+                    "printedName": "iOS_SDK.CodelineOutput",
+                    "usr": "s:7iOS_SDK14CodelineOutputC"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:7iOS_SDK13TextProcessorC8codelineAA14CodelineOutputCvg",
+                "mangledName": "$s7iOS_SDK13TextProcessorC8codelineAA14CodelineOutputCvg",
+                "moduleName": "iOS_SDK",
+                "isFromExtension": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "securityCode1",
+            "printedName": "securityCode1",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "SecurityCode1Output",
+                "printedName": "iOS_SDK.SecurityCode1Output",
+                "usr": "s:7iOS_SDK19SecurityCode1OutputC"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:7iOS_SDK13TextProcessorC13securityCode1AA08SecurityF6OutputCvp",
+            "mangledName": "$s7iOS_SDK13TextProcessorC13securityCode1AA08SecurityF6OutputCvp",
+            "moduleName": "iOS_SDK",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "SecurityCode1Output",
+                    "printedName": "iOS_SDK.SecurityCode1Output",
+                    "usr": "s:7iOS_SDK19SecurityCode1OutputC"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:7iOS_SDK13TextProcessorC13securityCode1AA08SecurityF6OutputCvg",
+                "mangledName": "$s7iOS_SDK13TextProcessorC13securityCode1AA08SecurityF6OutputCvg",
+                "moduleName": "iOS_SDK",
+                "isFromExtension": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "invalidity",
+            "printedName": "invalidity",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "InvalidityOutput",
+                "printedName": "iOS_SDK.InvalidityOutput",
+                "usr": "s:7iOS_SDK16InvalidityOutputC"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:7iOS_SDK13TextProcessorC10invalidityAA16InvalidityOutputCvp",
+            "mangledName": "$s7iOS_SDK13TextProcessorC10invalidityAA16InvalidityOutputCvp",
+            "moduleName": "iOS_SDK",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "InvalidityOutput",
+                    "printedName": "iOS_SDK.InvalidityOutput",
+                    "usr": "s:7iOS_SDK16InvalidityOutputC"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:7iOS_SDK13TextProcessorC10invalidityAA16InvalidityOutputCvg",
+                "mangledName": "$s7iOS_SDK13TextProcessorC10invalidityAA16InvalidityOutputCvg",
+                "moduleName": "iOS_SDK",
+                "isFromExtension": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "address",
+            "printedName": "address",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "AddressOutput",
+                "printedName": "iOS_SDK.AddressOutput",
+                "usr": "s:7iOS_SDK13AddressOutputC"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:7iOS_SDK13TextProcessorC7addressAA13AddressOutputCvp",
+            "mangledName": "$s7iOS_SDK13TextProcessorC7addressAA13AddressOutputCvp",
+            "moduleName": "iOS_SDK",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "AddressOutput",
+                    "printedName": "iOS_SDK.AddressOutput",
+                    "usr": "s:7iOS_SDK13AddressOutputC"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:7iOS_SDK13TextProcessorC7addressAA13AddressOutputCvg",
+                "mangledName": "$s7iOS_SDK13TextProcessorC7addressAA13AddressOutputCvg",
+                "moduleName": "iOS_SDK",
+                "isFromExtension": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "payeeName",
+            "printedName": "payeeName",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "PayeeNameOutput",
+                "printedName": "iOS_SDK.PayeeNameOutput",
+                "usr": "s:7iOS_SDK15PayeeNameOutputC"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:7iOS_SDK13TextProcessorC9payeeNameAA05PayeeF6OutputCvp",
+            "mangledName": "$s7iOS_SDK13TextProcessorC9payeeNameAA05PayeeF6OutputCvp",
+            "moduleName": "iOS_SDK",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "PayeeNameOutput",
+                    "printedName": "iOS_SDK.PayeeNameOutput",
+                    "usr": "s:7iOS_SDK15PayeeNameOutputC"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:7iOS_SDK13TextProcessorC9payeeNameAA05PayeeF6OutputCvg",
+                "mangledName": "$s7iOS_SDK13TextProcessorC9payeeNameAA05PayeeF6OutputCvg",
+                "moduleName": "iOS_SDK",
+                "isFromExtension": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "date",
+            "printedName": "date",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "DateOutput",
+                "printedName": "iOS_SDK.DateOutput",
+                "usr": "s:7iOS_SDK10DateOutputC"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:7iOS_SDK13TextProcessorC4dateAA10DateOutputCvp",
+            "mangledName": "$s7iOS_SDK13TextProcessorC4dateAA10DateOutputCvp",
+            "moduleName": "iOS_SDK",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "DateOutput",
+                    "printedName": "iOS_SDK.DateOutput",
+                    "usr": "s:7iOS_SDK10DateOutputC"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:7iOS_SDK13TextProcessorC4dateAA10DateOutputCvg",
+                "mangledName": "$s7iOS_SDK13TextProcessorC4dateAA10DateOutputCvg",
+                "moduleName": "iOS_SDK",
+                "isFromExtension": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "checkNumber",
+            "printedName": "checkNumber",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "CheckNumberOutput",
+                "printedName": "iOS_SDK.CheckNumberOutput",
+                "usr": "s:7iOS_SDK17CheckNumberOutputC"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:7iOS_SDK13TextProcessorC11checkNumberAA05CheckF6OutputCvp",
+            "mangledName": "$s7iOS_SDK13TextProcessorC11checkNumberAA05CheckF6OutputCvp",
+            "moduleName": "iOS_SDK",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "CheckNumberOutput",
+                    "printedName": "iOS_SDK.CheckNumberOutput",
+                    "usr": "s:7iOS_SDK17CheckNumberOutputC"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:7iOS_SDK13TextProcessorC11checkNumberAA05CheckF6OutputCvg",
+                "mangledName": "$s7iOS_SDK13TextProcessorC11checkNumberAA05CheckF6OutputCvg",
+                "moduleName": "iOS_SDK",
+                "isFromExtension": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "result",
+            "printedName": "result",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "AmountOutput",
+                "printedName": "iOS_SDK.AmountOutput",
+                "usr": "s:7iOS_SDK12AmountOutputC"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:7iOS_SDK13TextProcessorC6resultAA12AmountOutputCvp",
+            "mangledName": "$s7iOS_SDK13TextProcessorC6resultAA12AmountOutputCvp",
+            "moduleName": "iOS_SDK",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "AmountOutput",
+                    "printedName": "iOS_SDK.AmountOutput",
+                    "usr": "s:7iOS_SDK12AmountOutputC"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:7iOS_SDK13TextProcessorC6resultAA12AmountOutputCvg",
+                "mangledName": "$s7iOS_SDK13TextProcessorC6resultAA12AmountOutputCvg",
+                "moduleName": "iOS_SDK",
+                "isFromExtension": true,
+                "accessorKind": "get"
+              }
+            ]
+          }
+        ],
+        "declKind": "Class",
+        "usr": "s:7iOS_SDK13TextProcessorC",
+        "mangledName": "$s7iOS_SDK13TextProcessorC",
+        "moduleName": "iOS_SDK",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "ResultOutput",
+        "printedName": "ResultOutput",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "reco",
+            "printedName": "reco",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:7iOS_SDK12ResultOutputC4recoSSvp",
+            "mangledName": "$s7iOS_SDK12ResultOutputC4recoSSvp",
+            "moduleName": "iOS_SDK",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:7iOS_SDK12ResultOutputC4recoSSvg",
+                "mangledName": "$s7iOS_SDK12ResultOutputC4recoSSvg",
+                "moduleName": "iOS_SDK",
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "score",
+            "printedName": "score",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:7iOS_SDK12ResultOutputC5scoreSivp",
+            "mangledName": "$s7iOS_SDK12ResultOutputC5scoreSivp",
+            "moduleName": "iOS_SDK",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:7iOS_SDK12ResultOutputC5scoreSivg",
+                "mangledName": "$s7iOS_SDK12ResultOutputC5scoreSivg",
+                "moduleName": "iOS_SDK",
+                "accessorKind": "get"
+              }
+            ]
+          }
+        ],
+        "declKind": "Class",
+        "usr": "s:7iOS_SDK12ResultOutputC",
+        "mangledName": "$s7iOS_SDK12ResultOutputC",
+        "moduleName": "iOS_SDK",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "hasMissingDesignatedInitializers": true,
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "ResultOutput1",
+        "printedName": "ResultOutput1",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "reco",
+            "printedName": "reco",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:7iOS_SDK13ResultOutput1C4recoSSvp",
+            "mangledName": "$s7iOS_SDK13ResultOutput1C4recoSSvp",
+            "moduleName": "iOS_SDK",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:7iOS_SDK13ResultOutput1C4recoSSvg",
+                "mangledName": "$s7iOS_SDK13ResultOutput1C4recoSSvg",
+                "moduleName": "iOS_SDK",
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "score",
+            "printedName": "score",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:7iOS_SDK13ResultOutput1C5scoreSivp",
+            "mangledName": "$s7iOS_SDK13ResultOutput1C5scoreSivp",
+            "moduleName": "iOS_SDK",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:7iOS_SDK13ResultOutput1C5scoreSivg",
+                "mangledName": "$s7iOS_SDK13ResultOutput1C5scoreSivg",
+                "moduleName": "iOS_SDK",
+                "accessorKind": "get"
+              }
+            ]
+          }
+        ],
+        "declKind": "Class",
+        "usr": "s:7iOS_SDK13ResultOutput1C",
+        "mangledName": "$s7iOS_SDK13ResultOutput1C",
+        "moduleName": "iOS_SDK",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "hasMissingDesignatedInitializers": true,
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "AmountOutput",
+        "printedName": "AmountOutput",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "amount",
+            "printedName": "amount",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:7iOS_SDK12AmountOutputC6amountSivp",
+            "mangledName": "$s7iOS_SDK12AmountOutputC6amountSivp",
+            "moduleName": "iOS_SDK",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:7iOS_SDK12AmountOutputC6amountSivg",
+                "mangledName": "$s7iOS_SDK12AmountOutputC6amountSivg",
+                "moduleName": "iOS_SDK",
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "score",
+            "printedName": "score",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:7iOS_SDK12AmountOutputC5scoreSivp",
+            "mangledName": "$s7iOS_SDK12AmountOutputC5scoreSivp",
+            "moduleName": "iOS_SDK",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:7iOS_SDK12AmountOutputC5scoreSivg",
+                "mangledName": "$s7iOS_SDK12AmountOutputC5scoreSivg",
+                "moduleName": "iOS_SDK",
+                "accessorKind": "get"
+              }
+            ]
+          }
+        ],
+        "declKind": "Class",
+        "usr": "s:7iOS_SDK12AmountOutputC",
+        "mangledName": "$s7iOS_SDK12AmountOutputC",
+        "moduleName": "iOS_SDK",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "hasMissingDesignatedInitializers": true,
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "A2iAAddressLineScore",
+        "printedName": "A2iAAddressLineScore",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "reco",
+            "printedName": "reco",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:7iOS_SDK20A2iAAddressLineScoreC4recoSSvp",
+            "mangledName": "$s7iOS_SDK20A2iAAddressLineScoreC4recoSSvp",
+            "moduleName": "iOS_SDK",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:7iOS_SDK20A2iAAddressLineScoreC4recoSSvg",
+                "mangledName": "$s7iOS_SDK20A2iAAddressLineScoreC4recoSSvg",
+                "moduleName": "iOS_SDK",
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "score",
+            "printedName": "score",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:7iOS_SDK20A2iAAddressLineScoreC5scoreSivp",
+            "mangledName": "$s7iOS_SDK20A2iAAddressLineScoreC5scoreSivp",
+            "moduleName": "iOS_SDK",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:7iOS_SDK20A2iAAddressLineScoreC5scoreSivg",
+                "mangledName": "$s7iOS_SDK20A2iAAddressLineScoreC5scoreSivg",
+                "moduleName": "iOS_SDK",
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "A2iAAddressLineScore",
+                "printedName": "iOS_SDK.A2iAAddressLineScore",
+                "usr": "c:@M@iOS_SDK@objc(cs)A2iAAddressLineScore"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "c:@M@iOS_SDK@objc(cs)A2iAAddressLineScore(im)init",
+            "mangledName": "$s7iOS_SDK20A2iAAddressLineScoreCACycfc",
+            "moduleName": "iOS_SDK",
+            "overriding": true,
+            "objc_name": "init",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "AccessControl",
+              "Override"
+            ],
+            "init_kind": "Designated"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "c:@M@iOS_SDK@objc(cs)A2iAAddressLineScore",
+        "mangledName": "$s7iOS_SDK20A2iAAddressLineScoreC",
+        "moduleName": "iOS_SDK",
+        "declAttributes": [
+          "AccessControl",
+          "ObjC"
+        ],
+        "superclassUsr": "c:objc(cs)NSObject",
+        "inheritsConvenienceInitializers": true,
+        "superclassNames": [
+          "ObjectiveC.NSObject"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObservingPublishing",
+            "printedName": "_KeyValueCodingAndObservingPublishing",
+            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "A2iAAmountProb",
+        "printedName": "A2iAAmountProb",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "amount",
+            "printedName": "amount",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:7iOS_SDK14A2iAAmountProbC6amountSivp",
+            "mangledName": "$s7iOS_SDK14A2iAAmountProbC6amountSivp",
+            "moduleName": "iOS_SDK",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:7iOS_SDK14A2iAAmountProbC6amountSivg",
+                "mangledName": "$s7iOS_SDK14A2iAAmountProbC6amountSivg",
+                "moduleName": "iOS_SDK",
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "prob",
+            "printedName": "prob",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Float",
+                "printedName": "Swift.Float",
+                "usr": "s:Sf"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:7iOS_SDK14A2iAAmountProbC4probSfvp",
+            "mangledName": "$s7iOS_SDK14A2iAAmountProbC4probSfvp",
+            "moduleName": "iOS_SDK",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Float",
+                    "printedName": "Swift.Float",
+                    "usr": "s:Sf"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:7iOS_SDK14A2iAAmountProbC4probSfvg",
+                "mangledName": "$s7iOS_SDK14A2iAAmountProbC4probSfvg",
+                "moduleName": "iOS_SDK",
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "A2iAAmountProb",
+                "printedName": "iOS_SDK.A2iAAmountProb",
+                "usr": "c:@M@iOS_SDK@objc(cs)A2iAAmountProb"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "c:@M@iOS_SDK@objc(cs)A2iAAmountProb(im)init",
+            "mangledName": "$s7iOS_SDK14A2iAAmountProbCACycfc",
+            "moduleName": "iOS_SDK",
+            "overriding": true,
+            "implicit": true,
+            "objc_name": "init",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Override"
+            ],
+            "init_kind": "Designated"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "c:@M@iOS_SDK@objc(cs)A2iAAmountProb",
+        "mangledName": "$s7iOS_SDK14A2iAAmountProbC",
+        "moduleName": "iOS_SDK",
+        "declAttributes": [
+          "AccessControl",
+          "ObjC"
+        ],
+        "superclassUsr": "c:objc(cs)NSObject",
+        "inheritsConvenienceInitializers": true,
+        "superclassNames": [
+          "ObjectiveC.NSObject"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObservingPublishing",
+            "printedName": "_KeyValueCodingAndObservingPublishing",
+            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "DateRecoOutput",
+        "printedName": "DateRecoOutput",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "year",
+            "printedName": "year",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:7iOS_SDK14DateRecoOutputC4yearSivp",
+            "mangledName": "$s7iOS_SDK14DateRecoOutputC4yearSivp",
+            "moduleName": "iOS_SDK",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:7iOS_SDK14DateRecoOutputC4yearSivg",
+                "mangledName": "$s7iOS_SDK14DateRecoOutputC4yearSivg",
+                "moduleName": "iOS_SDK",
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "month",
+            "printedName": "month",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:7iOS_SDK14DateRecoOutputC5monthSivp",
+            "mangledName": "$s7iOS_SDK14DateRecoOutputC5monthSivp",
+            "moduleName": "iOS_SDK",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:7iOS_SDK14DateRecoOutputC5monthSivg",
+                "mangledName": "$s7iOS_SDK14DateRecoOutputC5monthSivg",
+                "moduleName": "iOS_SDK",
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "day",
+            "printedName": "day",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:7iOS_SDK14DateRecoOutputC3daySivp",
+            "mangledName": "$s7iOS_SDK14DateRecoOutputC3daySivp",
+            "moduleName": "iOS_SDK",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:7iOS_SDK14DateRecoOutputC3daySivg",
+                "mangledName": "$s7iOS_SDK14DateRecoOutputC3daySivg",
+                "moduleName": "iOS_SDK",
+                "accessorKind": "get"
+              }
+            ]
+          }
+        ],
+        "declKind": "Class",
+        "usr": "s:7iOS_SDK14DateRecoOutputC",
+        "mangledName": "$s7iOS_SDK14DateRecoOutputC",
+        "moduleName": "iOS_SDK",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "hasMissingDesignatedInitializers": true,
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "DateResultOutput",
+        "printedName": "DateResultOutput",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "reco",
+            "printedName": "reco",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "DateRecoOutput",
+                "printedName": "iOS_SDK.DateRecoOutput",
+                "usr": "s:7iOS_SDK14DateRecoOutputC"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:7iOS_SDK16DateResultOutputC4recoAA0c4RecoE0Cvp",
+            "mangledName": "$s7iOS_SDK16DateResultOutputC4recoAA0c4RecoE0Cvp",
+            "moduleName": "iOS_SDK",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "DateRecoOutput",
+                    "printedName": "iOS_SDK.DateRecoOutput",
+                    "usr": "s:7iOS_SDK14DateRecoOutputC"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:7iOS_SDK16DateResultOutputC4recoAA0c4RecoE0Cvg",
+                "mangledName": "$s7iOS_SDK16DateResultOutputC4recoAA0c4RecoE0Cvg",
+                "moduleName": "iOS_SDK",
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "score",
+            "printedName": "score",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:7iOS_SDK16DateResultOutputC5scoreSivp",
+            "mangledName": "$s7iOS_SDK16DateResultOutputC5scoreSivp",
+            "moduleName": "iOS_SDK",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:7iOS_SDK16DateResultOutputC5scoreSivg",
+                "mangledName": "$s7iOS_SDK16DateResultOutputC5scoreSivg",
+                "moduleName": "iOS_SDK",
+                "accessorKind": "get"
+              }
+            ]
+          }
+        ],
+        "declKind": "Class",
+        "usr": "s:7iOS_SDK16DateResultOutputC",
+        "mangledName": "$s7iOS_SDK16DateResultOutputC",
+        "moduleName": "iOS_SDK",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "hasMissingDesignatedInitializers": true,
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "DateOutput",
+        "printedName": "DateOutput",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "result",
+            "printedName": "result",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "DateResultOutput",
+                "printedName": "iOS_SDK.DateResultOutput",
+                "usr": "s:7iOS_SDK16DateResultOutputC"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:7iOS_SDK10DateOutputC6resultAA0c6ResultD0Cvp",
+            "mangledName": "$s7iOS_SDK10DateOutputC6resultAA0c6ResultD0Cvp",
+            "moduleName": "iOS_SDK",
+            "declAttributes": [
+              "Final",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "DateResultOutput",
+                    "printedName": "iOS_SDK.DateResultOutput",
+                    "usr": "s:7iOS_SDK16DateResultOutputC"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:7iOS_SDK10DateOutputC6resultAA0c6ResultD0Cvg",
+                "mangledName": "$s7iOS_SDK10DateOutputC6resultAA0c6ResultD0Cvg",
+                "moduleName": "iOS_SDK",
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          }
+        ],
+        "declKind": "Class",
+        "usr": "s:7iOS_SDK10DateOutputC",
+        "mangledName": "$s7iOS_SDK10DateOutputC",
+        "moduleName": "iOS_SDK",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "hasMissingDesignatedInitializers": true,
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "CodelineOutput",
+        "printedName": "CodelineOutput",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "result",
+            "printedName": "result",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "ResultOutput",
+                "printedName": "iOS_SDK.ResultOutput",
+                "usr": "s:7iOS_SDK12ResultOutputC"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:7iOS_SDK14CodelineOutputC6resultAA06ResultD0Cvp",
+            "mangledName": "$s7iOS_SDK14CodelineOutputC6resultAA06ResultD0Cvp",
+            "moduleName": "iOS_SDK",
+            "declAttributes": [
+              "Final",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ResultOutput",
+                    "printedName": "iOS_SDK.ResultOutput",
+                    "usr": "s:7iOS_SDK12ResultOutputC"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:7iOS_SDK14CodelineOutputC6resultAA06ResultD0Cvg",
+                "mangledName": "$s7iOS_SDK14CodelineOutputC6resultAA06ResultD0Cvg",
+                "moduleName": "iOS_SDK",
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          }
+        ],
+        "declKind": "Class",
+        "usr": "s:7iOS_SDK14CodelineOutputC",
+        "mangledName": "$s7iOS_SDK14CodelineOutputC",
+        "moduleName": "iOS_SDK",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "hasMissingDesignatedInitializers": true,
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "SecurityCode1Output",
+        "printedName": "SecurityCode1Output",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "result",
+            "printedName": "result",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "SecurityCode1ResultOutput",
+                "printedName": "iOS_SDK.SecurityCode1ResultOutput",
+                "usr": "s:7iOS_SDK25SecurityCode1ResultOutputC"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:7iOS_SDK19SecurityCode1OutputC6resultAA0cd6ResultE0Cvp",
+            "mangledName": "$s7iOS_SDK19SecurityCode1OutputC6resultAA0cd6ResultE0Cvp",
+            "moduleName": "iOS_SDK",
+            "declAttributes": [
+              "Final",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "SecurityCode1ResultOutput",
+                    "printedName": "iOS_SDK.SecurityCode1ResultOutput",
+                    "usr": "s:7iOS_SDK25SecurityCode1ResultOutputC"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:7iOS_SDK19SecurityCode1OutputC6resultAA0cd6ResultE0Cvg",
+                "mangledName": "$s7iOS_SDK19SecurityCode1OutputC6resultAA0cd6ResultE0Cvg",
+                "moduleName": "iOS_SDK",
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          }
+        ],
+        "declKind": "Class",
+        "usr": "s:7iOS_SDK19SecurityCode1OutputC",
+        "mangledName": "$s7iOS_SDK19SecurityCode1OutputC",
+        "moduleName": "iOS_SDK",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "hasMissingDesignatedInitializers": true,
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "SecurityCode1ResultOutput",
+        "printedName": "SecurityCode1ResultOutput",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "reco",
+            "printedName": "reco",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:7iOS_SDK25SecurityCode1ResultOutputC4recoSSvp",
+            "mangledName": "$s7iOS_SDK25SecurityCode1ResultOutputC4recoSSvp",
+            "moduleName": "iOS_SDK",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:7iOS_SDK25SecurityCode1ResultOutputC4recoSSvg",
+                "mangledName": "$s7iOS_SDK25SecurityCode1ResultOutputC4recoSSvg",
+                "moduleName": "iOS_SDK",
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "score",
+            "printedName": "score",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:7iOS_SDK25SecurityCode1ResultOutputC5scoreSivp",
+            "mangledName": "$s7iOS_SDK25SecurityCode1ResultOutputC5scoreSivp",
+            "moduleName": "iOS_SDK",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:7iOS_SDK25SecurityCode1ResultOutputC5scoreSivg",
+                "mangledName": "$s7iOS_SDK25SecurityCode1ResultOutputC5scoreSivg",
+                "moduleName": "iOS_SDK",
+                "accessorKind": "get"
+              }
+            ]
+          }
+        ],
+        "declKind": "Class",
+        "usr": "s:7iOS_SDK25SecurityCode1ResultOutputC",
+        "mangledName": "$s7iOS_SDK25SecurityCode1ResultOutputC",
+        "moduleName": "iOS_SDK",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "hasMissingDesignatedInitializers": true,
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "PayeeNameOutput",
+        "printedName": "PayeeNameOutput",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "result",
+            "printedName": "result",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "ResultOutput1",
+                "printedName": "iOS_SDK.ResultOutput1",
+                "usr": "s:7iOS_SDK13ResultOutput1C"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:7iOS_SDK15PayeeNameOutputC6resultAA13ResultOutput1Cvp",
+            "mangledName": "$s7iOS_SDK15PayeeNameOutputC6resultAA13ResultOutput1Cvp",
+            "moduleName": "iOS_SDK",
+            "declAttributes": [
+              "Final",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ResultOutput1",
+                    "printedName": "iOS_SDK.ResultOutput1",
+                    "usr": "s:7iOS_SDK13ResultOutput1C"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:7iOS_SDK15PayeeNameOutputC6resultAA13ResultOutput1Cvg",
+                "mangledName": "$s7iOS_SDK15PayeeNameOutputC6resultAA13ResultOutput1Cvg",
+                "moduleName": "iOS_SDK",
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          }
+        ],
+        "declKind": "Class",
+        "usr": "s:7iOS_SDK15PayeeNameOutputC",
+        "mangledName": "$s7iOS_SDK15PayeeNameOutputC",
+        "moduleName": "iOS_SDK",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "hasMissingDesignatedInitializers": true,
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "CheckNumberOutput",
+        "printedName": "CheckNumberOutput",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "result",
+            "printedName": "result",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "ResultOutput1",
+                "printedName": "iOS_SDK.ResultOutput1",
+                "usr": "s:7iOS_SDK13ResultOutput1C"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:7iOS_SDK17CheckNumberOutputC6resultAA13ResultOutput1Cvp",
+            "mangledName": "$s7iOS_SDK17CheckNumberOutputC6resultAA13ResultOutput1Cvp",
+            "moduleName": "iOS_SDK",
+            "declAttributes": [
+              "Final",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ResultOutput1",
+                    "printedName": "iOS_SDK.ResultOutput1",
+                    "usr": "s:7iOS_SDK13ResultOutput1C"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:7iOS_SDK17CheckNumberOutputC6resultAA13ResultOutput1Cvg",
+                "mangledName": "$s7iOS_SDK17CheckNumberOutputC6resultAA13ResultOutput1Cvg",
+                "moduleName": "iOS_SDK",
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          }
+        ],
+        "declKind": "Class",
+        "usr": "s:7iOS_SDK17CheckNumberOutputC",
+        "mangledName": "$s7iOS_SDK17CheckNumberOutputC",
+        "moduleName": "iOS_SDK",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "hasMissingDesignatedInitializers": true,
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "AddressOutput",
+        "printedName": "AddressOutput",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "linesArray",
+            "printedName": "linesArray",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "[iOS_SDK.A2iAAddressLineScore]?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Array",
+                    "printedName": "[iOS_SDK.A2iAAddressLineScore]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "A2iAAddressLineScore",
+                        "printedName": "iOS_SDK.A2iAAddressLineScore",
+                        "usr": "c:@M@iOS_SDK@objc(cs)A2iAAddressLineScore"
+                      }
+                    ],
+                    "usr": "s:Sa"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:7iOS_SDK13AddressOutputC10linesArraySayAA20A2iAAddressLineScoreCGSgvp",
+            "mangledName": "$s7iOS_SDK13AddressOutputC10linesArraySayAA20A2iAAddressLineScoreCGSgvp",
+            "moduleName": "iOS_SDK",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "[iOS_SDK.A2iAAddressLineScore]?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Array",
+                        "printedName": "[iOS_SDK.A2iAAddressLineScore]",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "A2iAAddressLineScore",
+                            "printedName": "iOS_SDK.A2iAAddressLineScore",
+                            "usr": "c:@M@iOS_SDK@objc(cs)A2iAAddressLineScore"
+                          }
+                        ],
+                        "usr": "s:Sa"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:7iOS_SDK13AddressOutputC10linesArraySayAA20A2iAAddressLineScoreCGSgvg",
+                "mangledName": "$s7iOS_SDK13AddressOutputC10linesArraySayAA20A2iAAddressLineScoreCGSgvg",
+                "moduleName": "iOS_SDK",
+                "accessorKind": "get"
+              }
+            ]
+          }
+        ],
+        "declKind": "Class",
+        "usr": "s:7iOS_SDK13AddressOutputC",
+        "mangledName": "$s7iOS_SDK13AddressOutputC",
+        "moduleName": "iOS_SDK",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "hasMissingDesignatedInitializers": true,
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "InvalidityOutput",
+        "printedName": "InvalidityOutput",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "noSignature",
+            "printedName": "noSignature",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:7iOS_SDK16InvalidityOutputC11noSignatureSivp",
+            "mangledName": "$s7iOS_SDK16InvalidityOutputC11noSignatureSivp",
+            "moduleName": "iOS_SDK",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:7iOS_SDK16InvalidityOutputC11noSignatureSivg",
+                "mangledName": "$s7iOS_SDK16InvalidityOutputC11noSignatureSivg",
+                "moduleName": "iOS_SDK",
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "score",
+            "printedName": "score",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:7iOS_SDK16InvalidityOutputC5scoreSivp",
+            "mangledName": "$s7iOS_SDK16InvalidityOutputC5scoreSivp",
+            "moduleName": "iOS_SDK",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:7iOS_SDK16InvalidityOutputC5scoreSivg",
+                "mangledName": "$s7iOS_SDK16InvalidityOutputC5scoreSivg",
+                "moduleName": "iOS_SDK",
+                "accessorKind": "get"
+              }
+            ]
+          }
+        ],
+        "declKind": "Class",
+        "usr": "s:7iOS_SDK16InvalidityOutputC",
+        "mangledName": "$s7iOS_SDK16InvalidityOutputC",
+        "moduleName": "iOS_SDK",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "hasMissingDesignatedInitializers": true,
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          }
+        ]
+      },
+      {
+        "kind": "Var",
+        "name": "A2iABoolean_Yes",
+        "printedName": "A2iABoolean_Yes",
+        "children": [
+          {
+            "kind": "TypeNominal",
+            "name": "Int",
+            "printedName": "Swift.Int",
+            "usr": "s:Si"
+          }
+        ],
+        "declKind": "Var",
+        "usr": "s:7iOS_SDK15A2iABoolean_YesSivp",
+        "mangledName": "$s7iOS_SDK15A2iABoolean_YesSivp",
+        "moduleName": "iOS_SDK",
+        "declAttributes": [
+          "HasInitialValue",
+          "HasStorage",
+          "AccessControl"
+        ],
+        "isLet": true,
+        "hasStorage": true,
+        "accessors": [
+          {
+            "kind": "Accessor",
+            "name": "Get",
+            "printedName": "Get()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Accessor",
+            "usr": "s:7iOS_SDK15A2iABoolean_YesSivg",
+            "mangledName": "$s7iOS_SDK15A2iABoolean_YesSivg",
+            "moduleName": "iOS_SDK",
+            "implicit": true,
+            "accessorKind": "get"
+          }
+        ]
+      },
+      {
+        "kind": "Var",
+        "name": "A2iABoolean_No",
+        "printedName": "A2iABoolean_No",
+        "children": [
+          {
+            "kind": "TypeNominal",
+            "name": "Int",
+            "printedName": "Swift.Int",
+            "usr": "s:Si"
+          }
+        ],
+        "declKind": "Var",
+        "usr": "s:7iOS_SDK14A2iABoolean_NoSivp",
+        "mangledName": "$s7iOS_SDK14A2iABoolean_NoSivp",
+        "moduleName": "iOS_SDK",
+        "declAttributes": [
+          "HasInitialValue",
+          "HasStorage",
+          "AccessControl"
+        ],
+        "isLet": true,
+        "hasStorage": true,
+        "accessors": [
+          {
+            "kind": "Accessor",
+            "name": "Get",
+            "printedName": "Get()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Accessor",
+            "usr": "s:7iOS_SDK14A2iABoolean_NoSivg",
+            "mangledName": "$s7iOS_SDK14A2iABoolean_NoSivg",
+            "moduleName": "iOS_SDK",
+            "implicit": true,
+            "accessorKind": "get"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "iOS_SDK"
+      },
+      {
+        "kind": "Import",
+        "name": "Vision",
+        "printedName": "Vision",
+        "declKind": "Import",
+        "moduleName": "iOS_SDK"
+      },
+      {
+        "kind": "Import",
+        "name": "CoreML",
+        "printedName": "CoreML",
+        "declKind": "Import",
+        "moduleName": "iOS_SDK"
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "iOS_SDK"
+      },
+      {
+        "kind": "Import",
+        "name": "CoreGraphics",
+        "printedName": "CoreGraphics",
+        "declKind": "Import",
+        "moduleName": "iOS_SDK"
+      },
+      {
+        "kind": "Import",
+        "name": "Accelerate",
+        "printedName": "Accelerate",
+        "declKind": "Import",
+        "moduleName": "iOS_SDK"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "Verify",
+        "printedName": "Verify",
+        "children": [
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(modelName:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Verify",
+                "printedName": "iOS_SDK.Verify",
+                "usr": "s:7iOS_SDK6VerifyC"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:7iOS_SDK6VerifyC9modelNameACSS_tcfc",
+            "mangledName": "$s7iOS_SDK6VerifyC9modelNameACSS_tcfc",
+            "moduleName": "iOS_SDK",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Function",
+            "name": "predict",
+            "printedName": "predict(image:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.Int?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "CGImage",
+                "printedName": "CoreGraphics.CGImage",
+                "usr": "c:@T@CGImageRef"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:7iOS_SDK6VerifyC7predict5imageSiSgSo10CGImageRefa_tF",
+            "mangledName": "$s7iOS_SDK6VerifyC7predict5imageSiSgSo10CGImageRefa_tF",
+            "moduleName": "iOS_SDK",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "s:7iOS_SDK6VerifyC",
+        "mangledName": "$s7iOS_SDK6VerifyC",
+        "moduleName": "iOS_SDK",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "iOS_SDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "iOS_SDK"
+      },
+      {
+        "kind": "Import",
+        "name": "Vision",
+        "printedName": "Vision",
+        "declKind": "Import",
+        "moduleName": "iOS_SDK"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "ImageProcessor",
+        "printedName": "ImageProcessor",
+        "children": [
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "ImageProcessor",
+                "printedName": "iOS_SDK.ImageProcessor",
+                "usr": "s:7iOS_SDK14ImageProcessorC"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:7iOS_SDK14ImageProcessorCACycfc",
+            "mangledName": "$s7iOS_SDK14ImageProcessorCACycfc",
+            "moduleName": "iOS_SDK",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Var",
+            "name": "processedImage",
+            "printedName": "processedImage",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "UIKit.UIImage?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UIImage",
+                    "printedName": "UIKit.UIImage",
+                    "usr": "c:objc(cs)UIImage"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:7iOS_SDK14ImageProcessorC09processedC0So7UIImageCSgvp",
+            "mangledName": "$s7iOS_SDK14ImageProcessorC09processedC0So7UIImageCSgvp",
+            "moduleName": "iOS_SDK",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "UIKit.UIImage?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "UIImage",
+                        "printedName": "UIKit.UIImage",
+                        "usr": "c:objc(cs)UIImage"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:7iOS_SDK14ImageProcessorC09processedC0So7UIImageCSgvg",
+                "mangledName": "$s7iOS_SDK14ImageProcessorC09processedC0So7UIImageCSgvg",
+                "moduleName": "iOS_SDK",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "UIKit.UIImage?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "UIImage",
+                        "printedName": "UIKit.UIImage",
+                        "usr": "c:objc(cs)UIImage"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:7iOS_SDK14ImageProcessorC09processedC0So7UIImageCSgvs",
+                "mangledName": "$s7iOS_SDK14ImageProcessorC09processedC0So7UIImageCSgvs",
+                "moduleName": "iOS_SDK",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:7iOS_SDK14ImageProcessorC09processedC0So7UIImageCSgvM",
+                "mangledName": "$s7iOS_SDK14ImageProcessorC09processedC0So7UIImageCSgvM",
+                "moduleName": "iOS_SDK",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "rectangleObservation",
+            "printedName": "rectangleObservation",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Vision.VNRectangleObservation?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "VNRectangleObservation",
+                    "printedName": "Vision.VNRectangleObservation",
+                    "usr": "c:objc(cs)VNRectangleObservation"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:7iOS_SDK14ImageProcessorC20rectangleObservationSo011VNRectangleF0CSgvp",
+            "mangledName": "$s7iOS_SDK14ImageProcessorC20rectangleObservationSo011VNRectangleF0CSgvp",
+            "moduleName": "iOS_SDK",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Vision.VNRectangleObservation?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "VNRectangleObservation",
+                        "printedName": "Vision.VNRectangleObservation",
+                        "usr": "c:objc(cs)VNRectangleObservation"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:7iOS_SDK14ImageProcessorC20rectangleObservationSo011VNRectangleF0CSgvg",
+                "mangledName": "$s7iOS_SDK14ImageProcessorC20rectangleObservationSo011VNRectangleF0CSgvg",
+                "moduleName": "iOS_SDK",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Vision.VNRectangleObservation?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "VNRectangleObservation",
+                        "printedName": "Vision.VNRectangleObservation",
+                        "usr": "c:objc(cs)VNRectangleObservation"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:7iOS_SDK14ImageProcessorC20rectangleObservationSo011VNRectangleF0CSgvs",
+                "mangledName": "$s7iOS_SDK14ImageProcessorC20rectangleObservationSo011VNRectangleF0CSgvs",
+                "moduleName": "iOS_SDK",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:7iOS_SDK14ImageProcessorC20rectangleObservationSo011VNRectangleF0CSgvM",
+                "mangledName": "$s7iOS_SDK14ImageProcessorC20rectangleObservationSo011VNRectangleF0CSgvM",
+                "moduleName": "iOS_SDK",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Function",
+            "name": "processImage",
+            "printedName": "processImage(image:onProcessingFinish:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "CIImage",
+                "printedName": "CoreImage.CIImage",
+                "usr": "c:objc(cs)CIImage"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "() -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:7iOS_SDK14ImageProcessorC07processC05image18onProcessingFinishySo7CIImageC_yyctF",
+            "mangledName": "$s7iOS_SDK14ImageProcessorC07processC05image18onProcessingFinishySo7CIImageC_yyctF",
+            "moduleName": "iOS_SDK",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "getSkewedImage",
+            "printedName": "getSkewedImage(image:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "CoreImage.CIImage?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "CIImage",
+                    "printedName": "CoreImage.CIImage",
+                    "usr": "c:objc(cs)CIImage"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "CIImage",
+                "printedName": "CoreImage.CIImage",
+                "usr": "c:objc(cs)CIImage"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:7iOS_SDK14ImageProcessorC09getSkewedC05imageSo7CIImageCSgAG_tF",
+            "mangledName": "$s7iOS_SDK14ImageProcessorC09getSkewedC05imageSo7CIImageCSgAG_tF",
+            "moduleName": "iOS_SDK",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "s:7iOS_SDK14ImageProcessorC",
+        "mangledName": "$s7iOS_SDK14ImageProcessorC",
+        "moduleName": "iOS_SDK",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "iOS_SDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "CoreML",
+        "printedName": "CoreML",
+        "declKind": "Import",
+        "moduleName": "iOS_SDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      }
+    ],
+    "json_format_version": 8
+  },
+  "ConstValues": [
+    {
+      "filePath": "\/Users\/jiangjustin\/Desktop\/iOS_SDK\/TextProcessor.swift",
+      "kind": "Array",
+      "offset": 297,
+      "length": 4,
+      "value": "[\"\"]"
+    },
+    {
+      "filePath": "\/Users\/jiangjustin\/Desktop\/iOS_SDK\/TextProcessor.swift",
+      "kind": "Array",
+      "offset": 347,
+      "length": 4,
+      "value": "[\"\"]"
+    },
+    {
+      "filePath": "\/Users\/jiangjustin\/Desktop\/iOS_SDK\/TextProcessor.swift",
+      "kind": "Array",
+      "offset": 380,
+      "length": 7,
+      "value": "[false]"
+    },
+    {
+      "filePath": "\/Users\/jiangjustin\/Desktop\/iOS_SDK\/TextProcessor.swift",
+      "kind": "IntegerLiteral",
+      "offset": 415,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/jiangjustin\/Desktop\/iOS_SDK\/TextProcessor.swift",
+      "kind": "Array",
+      "offset": 456,
+      "length": 3,
+      "value": "[0]"
+    },
+    {
+      "filePath": "\/Users\/jiangjustin\/Desktop\/iOS_SDK\/TextProcessor.swift",
+      "kind": "IntegerLiteral",
+      "offset": 495,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/jiangjustin\/Desktop\/iOS_SDK\/TextProcessor.swift",
+      "kind": "IntegerLiteral",
+      "offset": 531,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/jiangjustin\/Desktop\/iOS_SDK\/TextProcessor.swift",
+      "kind": "IntegerLiteral",
+      "offset": 563,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/jiangjustin\/Desktop\/iOS_SDK\/TextProcessor.swift",
+      "kind": "IntegerLiteral",
+      "offset": 599,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/jiangjustin\/Desktop\/iOS_SDK\/TextProcessor.swift",
+      "kind": "StringLiteral",
+      "offset": 16997,
+      "length": 16,
+      "value": "\"ios_micr_model\""
+    },
+    {
+      "filePath": "\/Users\/jiangjustin\/Desktop\/iOS_SDK\/TextProcessor.swift",
+      "kind": "StringLiteral",
+      "offset": 17023,
+      "length": 8,
+      "value": "\"tflite\""
+    },
+    {
+      "filePath": "\/Users\/jiangjustin\/Desktop\/iOS_SDK\/TextProcessor.swift",
+      "kind": "StringLiteral",
+      "offset": 17063,
+      "length": 32,
+      "value": "\"Model Not Found in SDK Bundle.\""
+    },
+    {
+      "filePath": "\/Users\/jiangjustin\/Desktop\/iOS_SDK\/TextProcessor.swift",
+      "kind": "IntegerLiteral",
+      "offset": 17190,
+      "length": 1,
+      "value": "2"
+    },
+    {
+      "filePath": "\/Users\/jiangjustin\/Desktop\/iOS_SDK\/TextProcessor.swift",
+      "kind": "IntegerLiteral",
+      "offset": 17465,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/jiangjustin\/Desktop\/iOS_SDK\/TextProcessor.swift",
+      "kind": "IntegerLiteral",
+      "offset": 17530,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/jiangjustin\/Desktop\/iOS_SDK\/TextProcessor.swift",
+      "kind": "IntegerLiteral",
+      "offset": 17590,
+      "length": 1,
+      "value": "2"
+    },
+    {
+      "filePath": "\/Users\/jiangjustin\/Desktop\/iOS_SDK\/TextProcessor.swift",
+      "kind": "StringLiteral",
+      "offset": 17742,
+      "length": 16,
+      "value": "\"Resizing Error\""
+    },
+    {
+      "filePath": "\/Users\/jiangjustin\/Desktop\/iOS_SDK\/TextProcessor.swift",
+      "kind": "Dictionary",
+      "offset": 17830,
+      "length": 163,
+      "value": "[(0, \"0\"), (1, \"1\"), (2, \"2\"), (3, \"3\"), (4, \"4\"), (5, \"5\"), (6, \"6\"), (7, \"7\"), (8, \"8\"), (9, \"9\"), (10, \".\"), (11, \";\"), (12, \",\"), (13, \"-\")]"
+    },
+    {
+      "filePath": "\/Users\/jiangjustin\/Desktop\/iOS_SDK\/TextProcessor.swift",
+      "kind": "IntegerLiteral",
+      "offset": 18133,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/jiangjustin\/Desktop\/iOS_SDK\/TextProcessor.swift",
+      "kind": "IntegerLiteral",
+      "offset": 18257,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/jiangjustin\/Desktop\/iOS_SDK\/TextProcessor.swift",
+      "kind": "StringLiteral",
+      "offset": 18361,
+      "length": 26,
+      "value": "\"原始输出: \""
+    },
+    {
+      "filePath": "\/Users\/jiangjustin\/Desktop\/iOS_SDK\/TextProcessor.swift",
+      "kind": "StringLiteral",
+      "offset": 18386,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/jiangjustin\/Desktop\/iOS_SDK\/TextProcessor.swift",
+      "kind": "StringLiteral",
+      "offset": 18460,
+      "length": 31,
+      "value": "\"Softmax后: \""
+    },
+    {
+      "filePath": "\/Users\/jiangjustin\/Desktop\/iOS_SDK\/TextProcessor.swift",
+      "kind": "StringLiteral",
+      "offset": 18490,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/jiangjustin\/Desktop\/iOS_SDK\/TextProcessor.swift",
+      "kind": "IntegerLiteral",
+      "offset": 18556,
+      "length": 2,
+      "value": "-1"
+    },
+    {
+      "filePath": "\/Users\/jiangjustin\/Desktop\/iOS_SDK\/TextProcessor.swift",
+      "kind": "IntegerLiteral",
+      "offset": 18616,
+      "length": 2,
+      "value": "-1"
+    },
+    {
+      "filePath": "\/Users\/jiangjustin\/Desktop\/iOS_SDK\/TextProcessor.swift",
+      "kind": "IntegerLiteral",
+      "offset": 18687,
+      "length": 2,
+      "value": "-1"
+    },
+    {
+      "filePath": "\/Users\/jiangjustin\/Desktop\/iOS_SDK\/TextProcessor.swift",
+      "kind": "IntegerLiteral",
+      "offset": 18810,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/jiangjustin\/Desktop\/iOS_SDK\/TextProcessor.swift",
+      "kind": "IntegerLiteral",
+      "offset": 18922,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/jiangjustin\/Desktop\/iOS_SDK\/TextProcessor.swift",
+      "kind": "StringLiteral",
+      "offset": 19036,
+      "length": 14,
+      "value": "\"Confidence: \""
+    },
+    {
+      "filePath": "\/Users\/jiangjustin\/Desktop\/iOS_SDK\/TextProcessor.swift",
+      "kind": "IntegerLiteral",
+      "offset": 19139,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/jiangjustin\/Desktop\/iOS_SDK\/TextProcessor.swift",
+      "kind": "StringLiteral",
+      "offset": 19264,
+      "length": 37,
+      "value": "\"Error converting maxIndex to symbol\""
+    },
+    {
+      "filePath": "\/Users\/jiangjustin\/Desktop\/iOS_SDK\/TextProcessor.swift",
+      "kind": "StringLiteral",
+      "offset": 19416,
+      "length": 76,
+      "value": "\"Failed to invoke the interpreter with error: \""
+    },
+    {
+      "filePath": "\/Users\/jiangjustin\/Desktop\/iOS_SDK\/TextProcessor.swift",
+      "kind": "StringLiteral",
+      "offset": 19491,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/jiangjustin\/Desktop\/iOS_SDK\/TextProcessor.swift",
+      "kind": "IntegerLiteral",
+      "offset": 31052,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/jiangjustin\/Desktop\/iOS_SDK\/TextProcessor.swift",
+      "kind": "IntegerLiteral",
+      "offset": 31087,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/jiangjustin\/Desktop\/iOS_SDK\/verify.swift",
+      "kind": "IntegerLiteral",
+      "offset": 202,
+      "length": 2,
+      "value": "64"
+    },
+    {
+      "filePath": "\/Users\/jiangjustin\/Desktop\/iOS_SDK\/verify.swift",
+      "kind": "IntegerLiteral",
+      "offset": 214,
+      "length": 2,
+      "value": "64"
+    },
+    {
+      "filePath": "\/Users\/jiangjustin\/Desktop\/iOS_SDK\/verify.swift",
+      "kind": "Array",
+      "offset": 3814,
+      "length": 9,
+      "value": "[\"input\"]"
+    },
+    {
+      "filePath": "\/Users\/jiangjustin\/Library\/Developer\/Xcode\/DerivedData\/iOS_SDK-hhzngroyrckfvgckqfqolrsczrqh\/Build\/Intermediates.noindex\/ArchiveIntermediates\/iOS_SDK\/IntermediateBuildFilesPath\/iOS_SDK.build\/Release-iphoneos\/iOS_SDK.build\/DerivedSources\/CoreMLGenerated\/model_svc_gray\/model_svc_gray.swift",
+      "kind": "Array",
+      "offset": 386,
+      "length": 9,
+      "value": "[\"input\"]"
+    }
+  ]
+}

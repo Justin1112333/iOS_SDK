@@ -1,0 +1,182 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 6.1 effective-5.10 (swiftlang-6.1.0.110.21 clang-1700.0.13.3)
+// swift-module-flags: -target x86_64-apple-ios15.6-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-experimental-feature DebugDescriptionMacro -enable-bare-slash-regex -module-name iOS_SDK
+// swift-module-flags-ignorable:  -interface-compiler-version 6.1
+import Accelerate
+import CoreGraphics
+import CoreML
+import Foundation
+import Swift
+import TensorFlowLite
+import UIKit
+import Vision
+import _Concurrency
+import _StringProcessing
+import _SwiftConcurrencyShims
+public class TextProcessor {
+  public init()
+  public var recognizedString: [Swift.String]
+  public var recognizedString1: [Swift.String]
+  public var sig: [Swift.Bool]
+  public var sig_score: Swift.Int
+  public var signatureScores: [Swift.Int]
+  public var micr_score: Swift.Float
+  public var cvn_score: Swift.Float
+  public var counter: Swift.Int
+  public var cvn_counter: Swift.Int
+  public func processImage(image: CoreImage.CIImage, onProcessingFinish: @escaping () -> Swift.Void)
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers public class ResultOutput {
+  public var reco: Swift.String {
+    get
+  }
+  public var score: Swift.Int {
+    get
+  }
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers public class ResultOutput1 {
+  public var reco: Swift.String {
+    get
+  }
+  public var score: Swift.Int {
+    get
+  }
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers public class AmountOutput {
+  public var amount: Swift.Int {
+    get
+  }
+  public var score: Swift.Int {
+    get
+  }
+  @objc deinit
+}
+@_inheritsConvenienceInitializers @objc public class A2iAAddressLineScore : ObjectiveC.NSObject {
+  public var reco: Swift.String {
+    get
+  }
+  public var score: Swift.Int {
+    get
+  }
+  @objc override dynamic public init()
+  @objc deinit
+}
+@objc @_inheritsConvenienceInitializers public class A2iAAmountProb : ObjectiveC.NSObject {
+  public var amount: Swift.Int {
+    get
+  }
+  public var prob: Swift.Float {
+    get
+  }
+  @objc override dynamic public init()
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers public class DateRecoOutput {
+  public var year: Swift.Int {
+    get
+  }
+  public var month: Swift.Int {
+    get
+  }
+  public var day: Swift.Int {
+    get
+  }
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers public class DateResultOutput {
+  public var reco: iOS_SDK.DateRecoOutput {
+    get
+  }
+  public var score: Swift.Int {
+    get
+  }
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers public class DateOutput {
+  final public let result: iOS_SDK.DateResultOutput
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers public class CodelineOutput {
+  final public let result: iOS_SDK.ResultOutput
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers public class SecurityCode1Output {
+  final public let result: iOS_SDK.SecurityCode1ResultOutput
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers public class SecurityCode1ResultOutput {
+  public var reco: Swift.String {
+    get
+  }
+  public var score: Swift.Int {
+    get
+  }
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers public class PayeeNameOutput {
+  final public let result: iOS_SDK.ResultOutput1
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers public class CheckNumberOutput {
+  final public let result: iOS_SDK.ResultOutput1
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers public class AddressOutput {
+  public var linesArray: [iOS_SDK.A2iAAddressLineScore]? {
+    get
+  }
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers public class InvalidityOutput {
+  public var noSignature: Swift.Int {
+    get
+  }
+  public var score: Swift.Int {
+    get
+  }
+  @objc deinit
+}
+extension iOS_SDK.TextProcessor {
+  public var codeline: iOS_SDK.CodelineOutput {
+    get
+  }
+  public var securityCode1: iOS_SDK.SecurityCode1Output {
+    get
+  }
+  public var invalidity: iOS_SDK.InvalidityOutput {
+    get
+  }
+  public var address: iOS_SDK.AddressOutput {
+    get
+  }
+  public var payeeName: iOS_SDK.PayeeNameOutput {
+    get
+  }
+  public var date: iOS_SDK.DateOutput {
+    get
+  }
+  public var checkNumber: iOS_SDK.CheckNumberOutput {
+    get
+  }
+  public var result: iOS_SDK.AmountOutput {
+    get
+  }
+}
+public let A2iABoolean_Yes: Swift.Int
+public let A2iABoolean_No: Swift.Int
+public class Verify {
+  public init(modelName: Swift.String)
+  public func predict(image: CoreGraphics.CGImage) -> Swift.Int?
+  @objc deinit
+}
+public class ImageProcessor {
+  public init()
+  public var processedImage: UIKit.UIImage?
+  public var rectangleObservation: Vision.VNRectangleObservation?
+  public func processImage(image: CoreImage.CIImage, onProcessingFinish: @escaping () -> Swift.Void)
+  public func getSkewedImage(image: CoreImage.CIImage) -> CoreImage.CIImage?
+  @objc deinit
+}
