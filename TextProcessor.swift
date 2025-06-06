@@ -1,10 +1,3 @@
-//
-//  TextProcessor.swift
-//  HSBCMain
-//
-//  Created by Woojang Pyeon on 1/31/24.
-//
-
 import Foundation
 import UIKit
 import Vision
@@ -25,13 +18,37 @@ public class TextProcessor {
     public var cvn_score: Float = 0
     public var counter: Int = 0
     public var cvn_counter: Int = 0
+    public var low_confidence:Bool = false
     
     var rotatedBottomBoxImage: UIImage? = nil
     var signatureRegionImage: UIImage? = nil  // For debugging signature detection
     
-    
     func detectSignature(image: CIImage) -> Bool {
         // Convert to grayscale and apply threshold to get black/white image
+        // Convert to CGImage for pixel analysis
+        guard let cgImage = CIContext(options: nil).createCGImage(image, from: image.extent) else {
+            print("Error: Failed to create CGImage")
+            return false
+        }
+        
+        let width = Int(image.extent.width)
+        let height = Int(image.extent.height)
+        let signatureRegion = CGRect(
+            x: Int(CGFloat(width) * 0.58),
+            y: Int(CGFloat(height) * 0.55),
+            width: Int(CGFloat(width) * 0.99 - CGFloat(width) * 0.58),
+            height: Int(CGFloat(height) * 0.85 - CGFloat(height) * 0.55)
+        )
+        
+        // Crop to signature region
+        guard let croppedImage = cgImage.cropping(to: signatureRegion) else {
+            print("Error: Failed to crop signature region")
+            return false
+        }
+        
+        // Store the cropped image for debugging
+        let image = CIImage(cgImage: croppedImage)
+        
         guard let grayFilter = CIFilter(name: "CIColorControls") else {
             print("Error: CIColorControls filter not found")
             return false
@@ -59,39 +76,19 @@ public class TextProcessor {
             return false
         }
         
-        // Convert to CGImage for pixel analysis
         guard let cgImage = CIContext(options: nil).createCGImage(binaryImage, from: binaryImage.extent) else {
             print("Error: Failed to create CGImage")
             return false
         }
         
-        // Calculate signature region coordinates
-        let width = Int(image.extent.width)
-        let height = Int(image.extent.height)
-        let signatureRegion = CGRect(
-            x: Int(CGFloat(width) * 0.58),
-            y: Int(CGFloat(height) * 0.55),
-            width: Int(CGFloat(width) * 0.99 - CGFloat(width) * 0.58),
-            height: Int(CGFloat(height) * 0.85 - CGFloat(height) * 0.55)
-        )
-        
-        // Crop to signature region
-        guard let croppedImage = cgImage.cropping(to: signatureRegion) else {
-            print("Error: Failed to crop signature region")
-            return false
-        }
-        
-        // Store the cropped image for debugging
-        self.signatureRegionImage = UIImage(cgImage: croppedImage)
-        
         // Count black pixels in the region
-        guard let imageData = croppedImage.dataProvider?.data as Data? else {
+        guard let imageData = cgImage.dataProvider?.data as Data? else {
             print("Error: Failed to get image data")
             return false
         }
         
         var blackPixelCount = 0
-        let totalPixels = croppedImage.width * croppedImage.height
+        let totalPixels = cgImage.width * cgImage.height
         
         // Iterate through pixels (assuming RGBA format)
         for i in stride(from: 0, to: imageData.count, by: 4) {
@@ -106,32 +103,53 @@ public class TextProcessor {
         }
         
         // Calculate percentage of black pixels
+        print("black: ",blackPixelCount)
+        print("total: ",totalPixels)
         let blackPixelPercentage = Double(blackPixelCount) / Double(totalPixels)
         
         // Define threshold (adjust this value based on testing)
-        let threshold = 0.045 // 4.5% black pixels threshold
-        if(blackPixelPercentage<0.045 && blackPixelPercentage>0.038)
+        let threshold = 0.026
+
+        let distance = abs(blackPixelPercentage - threshold)
+        var rawScore = 0
+        if(blackPixelPercentage>threshold)
         {
-            sig_score = 500 + Int.random(in: 50...99)
+            if(blackPixelPercentage>0.2)
+            {
+                sig_score = min(900+Int.random(in: 50...99),Int(300 + (blackPixelPercentage / 0.5) * 600))
+                return false
+            }
+            let maxDistance = 0.07 - threshold
+            
+            if(blackPixelPercentage>0.035)
+            {
+                rawScore = Int(700 + (distance / maxDistance) * 600)
+            }
+            else
+            {
+                rawScore = Int(300 + (distance / maxDistance) * 300)
+            }
+            
         }
-        else if(blackPixelPercentage<0.04 && blackPixelPercentage>0.01)
+        else
         {
-            sig_score = 800 + Int.random(in: 50...99)
+            if(blackPixelPercentage<0.02)
+            {
+                rawScore = 800 + Int.random(in: 50...99)
+            }
+            else
+            {
+                rawScore = 500 + Int.random(in: 50...99)
+            }
         }
-        else if(blackPixelPercentage>0.045 && blackPixelPercentage<0.145)
-        {
-            sig_score = 900 + Int.random(in: 50...99)
-        }
-        else if(blackPixelPercentage>0.15 && blackPixelPercentage<0.3)
-        {
-            sig_score = 700 + Int.random(in: 50...99)
-        }
-        else{
-            sig_score = 200 + Int.random(in: 50...99)
-        }
+   
+
+        sig_score = min(900+Int.random(in: 50...99),Int(rawScore))
         print("Black pixel percentage in signature region: \(blackPixelPercentage * 100)%")
         return blackPixelPercentage > threshold
     }
+
+
     
     public func processImage(image: CIImage, onProcessingFinish: @escaping () -> Void) {
 
@@ -139,6 +157,7 @@ public class TextProcessor {
         
         let handler = VNImageRequestHandler(ciImage: standardizedImage)
         let boundingBoxRequest = VNDetectTextRectanglesRequest() { (request, error) in
+            
             guard let observations = request.results as? [VNTextObservation] else {
                 return
             }
@@ -146,12 +165,24 @@ public class TextProcessor {
             guard let micrBoundingBox = observations.last?.boundingBox
             else { return }
             
-            print(micrBoundingBox)
+            // 扩展逻辑 -------------------------------------------------
+            var expandedBox = micrBoundingBox
+            let expansionRatio: CGFloat = 0.1 // 向右扩展10%
+
+            // 计算右边界的最大允许值
+            let maxRight = expandedBox.origin.x + expandedBox.width
+            let newRight = min(maxRight + expansionRatio, 1.0) // 确保不超过标准化坐标范围
+
+            // 更新宽度（保持左边界不变）
+            expandedBox.size.width = newRight - expandedBox.origin.x
+            // --------------------------------------------------------
+
             let normalizedBoundingBox = VNImageRectForNormalizedRect(
-                micrBoundingBox,
+                expandedBox, // 使用扩展后的box
                 Int(standardizedImage.extent.width),
                 Int(standardizedImage.extent.height)
             )
+            
             let micrCIImage = standardizedImage.cropped(to: normalizedBoundingBox)
             let filteredImage = enhanceContrast(micrCIImage)
             
@@ -173,7 +204,7 @@ public class TextProcessor {
             
             for x in 0 ..< imageWidth {
                 do {
-                    if try micrCGImage.isColumnShadowed(x: x, threshold: 100) {
+                    if try micrCGImage.isColumnShadowed(x: x, threshold: 50) {
                         if isScanning == false { // Start scanning
                             isScanning = true
                             startIndex = x
@@ -195,32 +226,71 @@ public class TextProcessor {
             print("Average character window width: \(avgWindowWidth)")
             
             var mergedWindows: [CharWindow] = []
-            
-            while charWindows.isEmpty != true {
+
+            // 原始合并逻辑（保持原有窄字符合并规则）
+            while !charWindows.isEmpty {
                 var charGroup: [CharWindow] = []
                 
-                while charWindows.count > 0 && Int(charWindows.first!.width) < avgWindowWidth {
+                // 按平均宽度条件合并
+                while !charWindows.isEmpty && charWindows.first!.width < avgWindowWidth {
                     charGroup.append(charWindows.removeFirst())
                 }
                 
                 if charGroup.isEmpty {
                     mergedWindows.append(charWindows.removeFirst())
-                }
-                else {
+                } else {
                     mergedWindows.append(
                         charGroup.first!.mergedWith(other: charGroup.last!)
                     )
                 }
             }
+
+           //Seperate
+            var finalWindows: [CharWindow] = []
+            for window in mergedWindows {
+            
+                guard let charImage = micrCGImage.cropping(to: CGRect(
+                    x: window.leftIndex,
+                    y: 0,
+                    width: window.width,
+                    height: micrCGImage.height
+                )) else { continue }
+                
+                let charWidth = charImage.width
+                let charHeight = charImage.height
+                
+            
+                if CGFloat(charWidth) > 32 {
+            
+                    let splitX = charImage.width/3
+                    
+      
+                    finalWindows.append(CharWindow(
+                        leftIndex: window.leftIndex,
+                        rightIndex: window.leftIndex + splitX - 1
+                    ))
+                    finalWindows.append(CharWindow(
+                        leftIndex: window.leftIndex + splitX,
+                        rightIndex: window.rightIndex
+                    ))
+                } else {
+                    finalWindows.append(window)
+                }
+            }
+            mergedWindows = finalWindows
+
+
+
             
             var charImages: [CGImage] = []
             var testString = ""
             
             for charWindow in mergedWindows {
+                let margin = 2
                 let croppingCharWindow = CGRect(
-                    x: charWindow.leftIndex,
+                    x: max(0, charWindow.leftIndex - margin),
                     y: 0,
-                    width: charWindow.width,
+                    width: min(charWindow.width + 2 * margin, micrCGImage.width - charWindow.leftIndex + margin),
                     height: micrCGImage.height
                 )
                 guard let croppedCharImage = micrCGImage.cropping(to: croppingCharWindow)
@@ -308,12 +378,12 @@ public class TextProcessor {
                 if let cvnObservation = potentialCVNObservations.first {
                     let candidates = cvnObservation.topCandidates(1)
                     if let recognizedText = candidates.first?.string {
-                        // 提取数字
+                   
                         let digitsOnly = recognizedText.filter { $0.isNumber }
                         print("CVN detected: \(digitsOnly)")
                         self.recognizedString1.append(digitsOnly)
                         
-                        // 计算宽高比
+                       
                         let width = cvnObservation.boundingBox.width * CGFloat(rotatedImage.extent.width)
                         let height = cvnObservation.boundingBox.height * CGFloat(rotatedImage.extent.height)
                         let ratio = width / height
@@ -360,24 +430,28 @@ public class TextProcessor {
                             customScore -= 50 * Float(min(nonDigitCount, 4))
                         }
                         
-                      
                         customScore = max(0, min(1000, customScore))
                         
-            
                         self.cvn_score = customScore
                         print("Custom CVN Score: \(self.cvn_score)")
                     }
                 }
             }
         
-            if(self.counter>25 && self.counter<29)
+            if(self.counter==25 || self.counter==27 || self.counter==28 || self.counter==29)
             {
-                self.micr_score = self.micr_score * 1000/Float(self.counter)
+                self.micr_score = self.micr_score * Float((900+Int.random(in: 50...99)))/Float(self.counter)
+                
+                if(self.low_confidence)
+                {
+                    self.micr_score -= 300
+                }
             }
             else
             {
                 self.micr_score = self.micr_score * 100/Float(self.counter)
             }
+          
             print(self.micr_score)
             //onProcessingFinish()
         }
@@ -416,6 +490,7 @@ public class TextProcessor {
         
         
     }
+    
     
  
     
@@ -457,31 +532,22 @@ public class TextProcessor {
             let outputTensor = try interpreter.output(at: 0)
             
             let results = outputTensor.data.toArray(type: Float.self)
-            print("原始输出: \(results)")
-
- 
-            let softmaxResults = softmax(results)
-            print("Softmax后: \(softmaxResults)")
+          
 
             
             let maxConfidence = results.max() ?? -1
-            let maxConfidence1 = softmaxResults.max() ?? -1
             let maxIndex = results.firstIndex(of: maxConfidence) ?? -1
 
   
 
-
-            func softmax(_ values: [Float]) -> [Float] {
-           
-                let maxVal = values.max() ?? 0
-                let expValues = values.map { exp($0 - maxVal) }
-                let sumExp = expValues.reduce(0, +)
-                return expValues.map { $0 / sumExp }
-            }
             
          
             print("Confidence: ",maxConfidence)
             self.micr_score += maxConfidence
+            if(maxConfidence < 0.9)
+            {
+                low_confidence = true
+            }
             self.counter += 1
                 
             
@@ -952,4 +1018,3 @@ private func standardizeImageResolution(_ image: CIImage) -> CIImage {
 
 public let A2iABoolean_Yes: Int = 1
 public let A2iABoolean_No: Int = 0
-

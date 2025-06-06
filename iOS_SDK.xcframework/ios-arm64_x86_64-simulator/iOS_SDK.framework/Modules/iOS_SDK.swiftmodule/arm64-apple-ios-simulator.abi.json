@@ -939,6 +939,92 @@
             ]
           },
           {
+            "kind": "Var",
+            "name": "low_confidence",
+            "printedName": "low_confidence",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:7iOS_SDK13TextProcessorC14low_confidenceSbvp",
+            "mangledName": "$s7iOS_SDK13TextProcessorC14low_confidenceSbvp",
+            "moduleName": "iOS_SDK",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:7iOS_SDK13TextProcessorC14low_confidenceSbvg",
+                "mangledName": "$s7iOS_SDK13TextProcessorC14low_confidenceSbvg",
+                "moduleName": "iOS_SDK",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:7iOS_SDK13TextProcessorC14low_confidenceSbvs",
+                "mangledName": "$s7iOS_SDK13TextProcessorC14low_confidenceSbvs",
+                "moduleName": "iOS_SDK",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:7iOS_SDK13TextProcessorC14low_confidenceSbvM",
+                "mangledName": "$s7iOS_SDK13TextProcessorC14low_confidenceSbvM",
+                "moduleName": "iOS_SDK",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
             "kind": "Function",
             "name": "processImage",
             "printedName": "processImage(image:onProcessingFinish:)",
@@ -3725,190 +3811,22 @@
     },
     {
       "filePath": "\/Users\/jiangjustin\/Desktop\/iOS_SDK\/TextProcessor.swift",
-      "kind": "StringLiteral",
-      "offset": 16997,
-      "length": 16,
-      "value": "\"ios_micr_model\""
-    },
-    {
-      "filePath": "\/Users\/jiangjustin\/Desktop\/iOS_SDK\/TextProcessor.swift",
-      "kind": "StringLiteral",
-      "offset": 17023,
-      "length": 8,
-      "value": "\"tflite\""
-    },
-    {
-      "filePath": "\/Users\/jiangjustin\/Desktop\/iOS_SDK\/TextProcessor.swift",
-      "kind": "StringLiteral",
-      "offset": 17063,
-      "length": 32,
-      "value": "\"Model Not Found in SDK Bundle.\""
+      "kind": "BooleanLiteral",
+      "offset": 638,
+      "length": 5,
+      "value": "false"
     },
     {
       "filePath": "\/Users\/jiangjustin\/Desktop\/iOS_SDK\/TextProcessor.swift",
       "kind": "IntegerLiteral",
-      "offset": 17190,
-      "length": 1,
-      "value": "2"
-    },
-    {
-      "filePath": "\/Users\/jiangjustin\/Desktop\/iOS_SDK\/TextProcessor.swift",
-      "kind": "IntegerLiteral",
-      "offset": 17465,
-      "length": 1,
-      "value": "0"
-    },
-    {
-      "filePath": "\/Users\/jiangjustin\/Desktop\/iOS_SDK\/TextProcessor.swift",
-      "kind": "IntegerLiteral",
-      "offset": 17530,
+      "offset": 33529,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/jiangjustin\/Desktop\/iOS_SDK\/TextProcessor.swift",
       "kind": "IntegerLiteral",
-      "offset": 17590,
-      "length": 1,
-      "value": "2"
-    },
-    {
-      "filePath": "\/Users\/jiangjustin\/Desktop\/iOS_SDK\/TextProcessor.swift",
-      "kind": "StringLiteral",
-      "offset": 17742,
-      "length": 16,
-      "value": "\"Resizing Error\""
-    },
-    {
-      "filePath": "\/Users\/jiangjustin\/Desktop\/iOS_SDK\/TextProcessor.swift",
-      "kind": "Dictionary",
-      "offset": 17830,
-      "length": 163,
-      "value": "[(0, \"0\"), (1, \"1\"), (2, \"2\"), (3, \"3\"), (4, \"4\"), (5, \"5\"), (6, \"6\"), (7, \"7\"), (8, \"8\"), (9, \"9\"), (10, \".\"), (11, \";\"), (12, \",\"), (13, \"-\")]"
-    },
-    {
-      "filePath": "\/Users\/jiangjustin\/Desktop\/iOS_SDK\/TextProcessor.swift",
-      "kind": "IntegerLiteral",
-      "offset": 18133,
-      "length": 1,
-      "value": "0"
-    },
-    {
-      "filePath": "\/Users\/jiangjustin\/Desktop\/iOS_SDK\/TextProcessor.swift",
-      "kind": "IntegerLiteral",
-      "offset": 18257,
-      "length": 1,
-      "value": "0"
-    },
-    {
-      "filePath": "\/Users\/jiangjustin\/Desktop\/iOS_SDK\/TextProcessor.swift",
-      "kind": "StringLiteral",
-      "offset": 18361,
-      "length": 26,
-      "value": "\"原始输出: \""
-    },
-    {
-      "filePath": "\/Users\/jiangjustin\/Desktop\/iOS_SDK\/TextProcessor.swift",
-      "kind": "StringLiteral",
-      "offset": 18386,
-      "length": 2,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/Users\/jiangjustin\/Desktop\/iOS_SDK\/TextProcessor.swift",
-      "kind": "StringLiteral",
-      "offset": 18460,
-      "length": 31,
-      "value": "\"Softmax后: \""
-    },
-    {
-      "filePath": "\/Users\/jiangjustin\/Desktop\/iOS_SDK\/TextProcessor.swift",
-      "kind": "StringLiteral",
-      "offset": 18490,
-      "length": 2,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/Users\/jiangjustin\/Desktop\/iOS_SDK\/TextProcessor.swift",
-      "kind": "IntegerLiteral",
-      "offset": 18556,
-      "length": 2,
-      "value": "-1"
-    },
-    {
-      "filePath": "\/Users\/jiangjustin\/Desktop\/iOS_SDK\/TextProcessor.swift",
-      "kind": "IntegerLiteral",
-      "offset": 18616,
-      "length": 2,
-      "value": "-1"
-    },
-    {
-      "filePath": "\/Users\/jiangjustin\/Desktop\/iOS_SDK\/TextProcessor.swift",
-      "kind": "IntegerLiteral",
-      "offset": 18687,
-      "length": 2,
-      "value": "-1"
-    },
-    {
-      "filePath": "\/Users\/jiangjustin\/Desktop\/iOS_SDK\/TextProcessor.swift",
-      "kind": "IntegerLiteral",
-      "offset": 18810,
-      "length": 1,
-      "value": "0"
-    },
-    {
-      "filePath": "\/Users\/jiangjustin\/Desktop\/iOS_SDK\/TextProcessor.swift",
-      "kind": "IntegerLiteral",
-      "offset": 18922,
-      "length": 1,
-      "value": "0"
-    },
-    {
-      "filePath": "\/Users\/jiangjustin\/Desktop\/iOS_SDK\/TextProcessor.swift",
-      "kind": "StringLiteral",
-      "offset": 19036,
-      "length": 14,
-      "value": "\"Confidence: \""
-    },
-    {
-      "filePath": "\/Users\/jiangjustin\/Desktop\/iOS_SDK\/TextProcessor.swift",
-      "kind": "IntegerLiteral",
-      "offset": 19139,
-      "length": 1,
-      "value": "1"
-    },
-    {
-      "filePath": "\/Users\/jiangjustin\/Desktop\/iOS_SDK\/TextProcessor.swift",
-      "kind": "StringLiteral",
-      "offset": 19264,
-      "length": 37,
-      "value": "\"Error converting maxIndex to symbol\""
-    },
-    {
-      "filePath": "\/Users\/jiangjustin\/Desktop\/iOS_SDK\/TextProcessor.swift",
-      "kind": "StringLiteral",
-      "offset": 19416,
-      "length": 76,
-      "value": "\"Failed to invoke the interpreter with error: \""
-    },
-    {
-      "filePath": "\/Users\/jiangjustin\/Desktop\/iOS_SDK\/TextProcessor.swift",
-      "kind": "StringLiteral",
-      "offset": 19491,
-      "length": 2,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/Users\/jiangjustin\/Desktop\/iOS_SDK\/TextProcessor.swift",
-      "kind": "IntegerLiteral",
-      "offset": 31052,
-      "length": 1,
-      "value": "1"
-    },
-    {
-      "filePath": "\/Users\/jiangjustin\/Desktop\/iOS_SDK\/TextProcessor.swift",
-      "kind": "IntegerLiteral",
-      "offset": 31087,
+      "offset": 33564,
       "length": 1,
       "value": "0"
     },

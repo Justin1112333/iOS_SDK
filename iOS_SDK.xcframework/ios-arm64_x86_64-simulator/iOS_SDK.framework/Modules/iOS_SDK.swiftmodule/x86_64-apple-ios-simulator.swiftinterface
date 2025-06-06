@@ -24,6 +24,7 @@ public class TextProcessor {
   public var cvn_score: Swift.Float
   public var counter: Swift.Int
   public var cvn_counter: Swift.Int
+  public var low_confidence: Swift.Bool
   public func processImage(image: CoreImage.CIImage, onProcessingFinish: @escaping () -> Swift.Void)
   @objc deinit
 }
